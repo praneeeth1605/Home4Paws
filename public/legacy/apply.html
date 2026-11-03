@@ -1,0 +1,45 @@
+<!-- ADOPTION APPLICATION -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adoption Application - Home4paws</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadApplication()">
+
+<header>
+    <img src="images/logo.jpeg" class="logo">
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="pets.html">Pets</a>
+        <a href="requests.html">My Requests</a>
+    </nav>
+</header>
+
+<div class="auth-box">
+
+    <h1 id="petName">Adoption Application</h1>
+
+    <form id="adoptionForm">
+
+        <label>Phone Number</label>
+        <input type="text" id="phone" required>
+
+        <label>Why do you want to adopt?</label>
+        <textarea id="reason" required></textarea>
+
+        <button type="submit" class="btn">Submit Application</button>
+
+    </form>
+
+    <p id="message"></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

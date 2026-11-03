@@ -1,0 +1,49 @@
+<!-- ADMIN ADOPTION REQUESTS -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adoption Requests - Home4paws</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadAdminRequestsPage()">
+
+<header>
+    <img src="images/logo.jpeg" class="logo">
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="admin.html">Dashboard</a>
+        <a href="admin-requests.html" class="active">Adoption Requests</a>
+        <button onclick="adminLogout()" class="logout">Logout</button>
+    </nav>
+</header>
+
+<section class="page-title">
+    <p class="tag">ADMIN PANEL</p>
+    <h1>Adoption Requests</h1>
+    <p>Review applications submitted by users and approve or reject them.</p>
+</section>
+
+<div class="request-summary" role="tablist" aria-label="Adoption request status">
+    <button type="button" id="tabPending" class="request-tab pending-tab active" role="tab" aria-selected="true" onclick="switchAdminRequestTab('Pending')">
+        <span id="pendingCount">0</span>
+        <small>Pending</small>
+    </button>
+    <button type="button" id="tabApproved" class="request-tab approved-tab" role="tab" aria-selected="false" onclick="switchAdminRequestTab('Approved')">
+        <span id="approvedCount">0</span>
+        <small>Approved</small>
+    </button>
+    <button type="button" id="tabRejected" class="request-tab rejected-tab" role="tab" aria-selected="false" onclick="switchAdminRequestTab('Rejected')">
+        <span id="rejectedCount">0</span>
+        <small>Rejected</small>
+    </button>
+</div>
+
+<div id="adminRequestsPage" class="request-list"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!-- AVAILABLE PETS -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Available Pets - Home4paws</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="showPets()">
+
+<header>
+    <img src="images/logo.jpeg" class="logo">
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="pets.html">Find a Pet</a>
+        <a href="requests.html">My Requests</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<section class="page-title">
+
+    <p class="tag">THEPETNEST</p>
+
+    <h1>Available Pets 🐾</h1>
+
+    <input
+        class="search"
+        id="search"
+        placeholder="Search pet or breed"
+        onkeyup="showPets()">
+
+    <select id="filter" onchange="showPets()">
+        <option>All</option>
+        <option>Dog</option>
+        <option>Cat</option>
+        <option>Other</option>
+        <option>Special Needs</option>
+    </select>
+
+</section>
+
+<div id="petList" class="pet-grid"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

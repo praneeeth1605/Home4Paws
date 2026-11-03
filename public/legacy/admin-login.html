@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Login - Home4paws</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <img src="logo.jpeg" class="logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="admin-register.html">Admin Registration</a>
+    </nav>
+</header>
+
+<div class="auth-box">
+    <h1>Admin Login</h1>
+    <p>Login to manage Home4paws</p>
+
+    <form id="adminForm">
+        <label>Username</label>
+        <input
+            type="text"
+            id="adminUser"
+            placeholder="Enter username"
+            required
+        >
+
+        <label>Password</label>
+        <input
+            type="password"
+            id="adminPass"
+            placeholder="Enter your password"
+            required
+        >
+
+        <button type="submit" class="btn">
+            Login
+        </button>
+    </form>
+
+    <p id="message" style="color:#d32f2f;font-weight:bold;"></p>
+
+    <p>
+        New administrator?
+        <a href="admin-register.html">Register here</a>
+    </p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

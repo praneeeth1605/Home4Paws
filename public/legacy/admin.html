@@ -1,0 +1,153 @@
+<!-- ADMIN DASHBOARD -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard - ThePetNest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadAdmin()">
+
+<header>
+
+    <img src="images/logo.jpeg" class="logo">
+
+    <nav>
+        <a href="index.html">Home</a>
+
+        <a href="admin-requests.html">
+            Adoption Requests
+        </a>
+
+        <button
+            type="button"
+            onclick="adminLogout()"
+            class="logout">
+            Logout
+        </button>
+    </nav>
+
+</header>
+
+
+<div class="admin-container">
+
+    <h1>Admin Dashboard</h1>
+
+    <!-- LOGGED-IN ADMIN NAME -->
+
+    <h2 id="adminWelcome" class="section-note"></h2>
+
+
+    <!-- ADD / EDIT PET -->
+
+    <section class="admin-section">
+
+        <h2>Add / Edit Pet</h2>
+
+        <input
+            id="petNameInput"
+            placeholder="Pet Name">
+
+        <input
+            id="petBreed"
+            placeholder="Breed">
+
+
+        <select id="petType">
+
+            <option>Dog</option>
+
+            <option>Cat</option>
+
+            <option>Other</option>
+
+            <option>Special Needs</option>
+
+        </select>
+
+
+        <input
+            id="petAge"
+            placeholder="Age">
+
+        <input
+            id="petLocation"
+            placeholder="Location">
+
+
+        <input
+            type="file"
+            id="petImage"
+            accept="image/*">
+
+
+        <input
+            id="petHealth"
+            placeholder="Health Information">
+
+
+        <button
+            type="button"
+            class="btn"
+            onclick="savePet()">
+
+            Save Pet
+
+        </button>
+
+    </section>
+
+
+    <!-- MANAGE PETS -->
+
+    <section class="admin-section">
+
+        <h2>Manage Pets</h2>
+
+        <div
+            id="adminPets"
+            class="admin-list">
+        </div>
+
+    </section>
+
+
+    <!-- ADOPTION REQUESTS -->
+
+    <section class="admin-section">
+
+        <h2>Adoption Requests</h2>
+
+        <p class="section-note">
+
+            Review user applications.
+
+            For the complete request management page,
+            use
+
+            <a href="admin-requests.html">
+                Adoption Requests
+            </a>
+
+            in the navbar.
+
+        </p>
+
+
+        <div id="adminRequests"></div>
+
+    </section>
+
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
